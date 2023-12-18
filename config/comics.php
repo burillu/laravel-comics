@@ -110,6 +110,68 @@ return [
             "sale_date" => "2019-04-10",
             "type" => "graphic novel",
         ]
+    ],
+    'menu' => [
+        [
+            "href" => '#',
+            "titolo" => "Characters",
+            "active" => false,
+            "id" => 1
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Characters",
+            "active" => false,
+            "id" => 2
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Tv",
+            "active" => false,
+            "id" => 3
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Characters",
+            "active" => false,
+            "id" => 4
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Shop",
+            "active" => true,
+            "id" => 5
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Characters",
+            "active" => false,
+            "id" => 6
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Characters",
+            "active" => false,
+            "id" => 7
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Characters",
+            "active" => false,
+            "id" => 8
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Characters",
+            "active" => false,
+            "id" => 9
+        ],
+        [
+            "href" => '#',
+            "titolo" => "Characters",
+            "active" => false,
+            "id" => 10
+        ],
     ]
 
 
