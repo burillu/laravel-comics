@@ -20,7 +20,7 @@
     <!-- main -->
     <main>
         <section id="hero">
-            <div class="my-img-container">
+            <div>
                 <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="hero-dc">
             </div>
     </section>

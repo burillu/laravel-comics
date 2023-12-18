@@ -29,6 +29,12 @@ body {
 }
 
 .my-img-container img {
+    width: 100%;
+    height: calc(100vw/5);
+    object-fit: contain;
+}
+
+.logo-img {
     width: 50px;
 }
 

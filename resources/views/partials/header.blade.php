@@ -4,8 +4,8 @@ $menu= config('comics.menu');
 @endphp
 <header>
     <div class="container">
-        <div class="container d-flex justify-content-between align-items-center h-100">
-            <div class="my-img-container">
+        <div class="container d-flex justify-content-between align-items-center ">
+            <div class="logo-img">
                 <a href="{{route('home')}}"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo-dc"></a>
             </div>
             <nav class="my-text-condensed">
