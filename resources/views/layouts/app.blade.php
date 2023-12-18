@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Laravel dc-comics @yield('title','template' )</title>
-
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{Vite::asset('resources/img/favicon.ico')}}" type="image/x-icon">
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -17,7 +18,16 @@
     <!-- header -->
     @include('partials.header')
     <!-- main -->
-    @yield('content')
+    <main>
+        <section id="hero">
+            <div class="my-img-container">
+                <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="hero-dc">
+            </div>
+    </section>
+    <!-- variable content -->
+       @yield('content') 
+    </main>
+    
     <!-- footer -->
     @include('partials.footer')
     

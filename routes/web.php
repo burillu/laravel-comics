@@ -17,4 +17,9 @@ Route::get('/', function () {
     $comics = config('comics.comics');
     //dd($comics);
     return view('home', compact('comics'));
-});
+})->name('home');
+
+Route::get('/characters', function () {
+    $message = 'Hello Dc Comics';
+    return view('characters', compact('message'));
+})->name('characters');

@@ -46,3 +46,13 @@ body {
 ul {
     list-style-type: none;
 }
+
+#hero {
+    height: 90vh;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        width: 100%
+    }
+}

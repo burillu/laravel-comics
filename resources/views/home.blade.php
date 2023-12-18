@@ -3,7 +3,8 @@
 @section('title', 'Home')
 
 @section('content')
-<main>
+
+    
     <div class="container">
         <div class="row">
             @foreach ($comics as $comic)
@@ -21,6 +22,6 @@
             
         </div>
     </div>
-</main>
+
 
 @endsection
