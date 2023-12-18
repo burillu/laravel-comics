@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section('title', 'Home')
 
-    <title>Laravel</title>
+@section('content')
+<main>
+    Main
+</main>
 
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    @vite('resources/js/app.js')
-
-<body>
-    <div class="container">
-        <h1 class="text-danger">
-            HELLOOOOOOO WORLD <i class="fa-solid fa-home"></i>
-        </h1>
-    </div>
-</body>
-
-</html>
+@endsection

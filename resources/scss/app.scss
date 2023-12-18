@@ -8,3 +8,33 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.my-primary {
+    background-color: $my-primary;
+}
+
+.my-text-primary {
+    color: $my-primary;
+}
+
+
+.my-bg-secondary {
+    background-color: $my-secondary;
+}
+
+.my-bg-dc {
+    height: 200px;
+    background-image: url('images/dc-logo-bg.png');
+    background-size: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
