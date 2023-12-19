@@ -172,6 +172,145 @@ return [
             "active" => false,
             "id" => 10
         ],
+    ],
+    'footer-lists' => [
+        [
+            'title' => 'Dc Comics',
+            'aList' => [
+                [
+                    'src' => '#',
+                    'text' => 'Characters',
+                    'id' => 1
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Comics',
+                    'id' => 2
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Movies',
+                    'id' => 3
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'TV',
+                    'id' => 4
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Games',
+                    'id' => 5
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Videos',
+                    'id' => 5
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'News',
+                    'id' => 5
+
+                ],
+            ]
+        ],
+        [
+            'title' => 'Shop',
+            'aList' => [
+                [
+                    'src' => '#',
+                    'text' => 'Shop DC',
+                    'id' => 1
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Shop DC Collectibles',
+                    'id' => 2
+
+                ],
+
+            ]
+        ],
+        [
+            'title' => 'Dc',
+            'aList' => [
+                [
+                    'src' => '#',
+                    'text' => 'Term Of Use',
+                    'id' => 1
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Privacy policy(New)',
+                    'id' => 2
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Ad Choices',
+                    'id' => 3
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Advertising',
+                    'id' => 4
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Jobs',
+                    'id' => 5
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Subscriptions',
+                    'id' => 5
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Talent Workshops',
+                    'id' => 5
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'CPSC Certificates',
+                    'id' => 5
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Ratings',
+                    'id' => 5
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Shop help',
+                    'id' => 5
+
+                ],
+                [
+                    'src' => '#',
+                    'text' => 'Contact Us',
+                    'id' => 5
+
+                ],
+            ]
+        ],
+
     ]
 
 

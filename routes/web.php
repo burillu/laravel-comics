@@ -44,41 +44,41 @@ Route::get('/comics/{index}', function ($index) {
 })->name('comics.show');
 
 Route::get('/movies', function () {
-    $message = 'Hello Dc Comics';
-    return view('movies', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('movies');
 
 Route::get('/tv', function () {
-    $message = 'Hello Dc Comics';
-    return view('tv', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('tv');
 
 Route::get('/games', function () {
-    $message = 'Hello Dc Comics';
-    return view('games', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('games');
 
 Route::get('/collectibles', function () {
-    $message = 'Hello Dc Comics';
-    return view('collectibles', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    $message = 'Hello Dc Comics';
-    return view('videos', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('videos');
 
 Route::get('/fans', function () {
-    $message = 'Hello Dc Comics';
-    return view('fans', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('fans');
 
 Route::get('/news', function () {
-    $message = 'Hello Dc Comics';
-    return view('news', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('news');
 
 Route::get('/shop', function () {
-    $message = 'Hello Dc Comics';
-    return view('shop', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('shop');
