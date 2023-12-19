@@ -32,8 +32,15 @@ Route::get('/comics', function () {
 // comic detail
 Route::get('/comics/{index}', function ($index) {
     $comics = config('comics.comics');
-    $comic = $comics[$index];
-    return view('comics.show', compact('comic'));
+
+    //controllo che non ci siano errori nel valore
+    if ($index >= 0 && $index < count($comics)) {
+        //prendo il comic con quell'indice
+        $comic = $comics[$index];
+        return view('comics.show', compact('comic'));
+    } else {
+        abort(404);
+    }
 })->name('comics.show');
 
 Route::get('/movies', function () {
