@@ -119,56 +119,56 @@ return [
             "id" => 1
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Characters",
+            "href" => 'comics',
+            "titolo" => "Comics",
             "active" => false,
             "id" => 2
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Tv",
+            "href" => 'movies',
+            "titolo" => "Movies",
             "active" => false,
             "id" => 3
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Characters",
+            "href" => 'tv',
+            "titolo" => "TV",
             "active" => false,
             "id" => 4
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Shop",
+            "href" => 'games',
+            "titolo" => "Games",
             "active" => true,
             "id" => 5
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Characters",
+            "href" => 'collectibles',
+            "titolo" => "Collectibles",
             "active" => false,
             "id" => 6
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Characters",
+            "href" => 'videos',
+            "titolo" => "Videos",
             "active" => false,
             "id" => 7
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Characters",
+            "href" => 'fans',
+            "titolo" => "Fans",
             "active" => false,
             "id" => 8
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Characters",
+            "href" => 'news',
+            "titolo" => "News",
             "active" => false,
             "id" => 9
         ],
         [
-            "href" => 'characters',
-            "titolo" => "Characters",
+            "href" => 'shop',
+            "titolo" => "Shop",
             "active" => false,
             "id" => 10
         ],

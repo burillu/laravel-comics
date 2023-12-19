@@ -13,7 +13,7 @@ $menu= config('comics.menu');
                 <ul class="nav text-secondary fw-bold  text-uppercase">
                     @foreach ($menu as $item)
                     <li class="nav-item">
-                        <a class="nav-link " href="{{route($item['href'])}}">{{$item['titolo']}}</a>
+                        <a class="nav-link {{Route::currentRouteName() == $item['href']? 'active':''}}" href="{{route($item['href'])}}">{{$item['titolo']}}</a>
 
                     </li> 
                     @endforeach
