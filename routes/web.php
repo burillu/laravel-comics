@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('comics.comics');
     //dd($comics);
-    return view('home', compact('comics'));
+    return view('comics.index', compact('comics'));
 })->name('home');
 
 Route::get('/characters', function () {
@@ -25,9 +25,16 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-    $message = 'Hello Dc Comics';
-    return view('characters', compact('message'));
+    $comics = config('comics.comics');
+    return view('comics.index', compact('comics'));
 })->name('comics');
+
+// comic detail
+Route::get('/comics/{index}', function ($index) {
+    $comics = config('comics.comics');
+    $comic = $comics[$index];
+    return view('comics.show', compact('comic'));
+})->name('comics.show');
 
 Route::get('/movies', function () {
     $message = 'Hello Dc Comics';

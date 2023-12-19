@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Comics')
 
 @section('content')
 
@@ -13,8 +13,7 @@
                     <img class="my-img-container" src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                     <div class="card-body">
                         <h5 class="card-title">{{$comic['title']}}</h5>
-                        <p class="card-text">{{substr($comic['description'], 0, 50) .'...'}}</p>
-                        
+                        <a class="btn btn-primary" href="#">Comic Details</a>                     
                       </div>
                 </div>
             </div>
