@@ -119,7 +119,7 @@ return [
             "id" => 1
         ],
         [
-            "href" => 'comics',
+            "href" => 'comics.index',
             "titolo" => "Comics",
             "active" => false,
             "id" => 2

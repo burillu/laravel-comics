@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comics = config('comics.comics');
-    //dd($comics);
-    return view('comics.index', compact('comics'));
+
+    return to_route('comics.index');
 })->name('home');
 
 Route::get('/characters', function () {
@@ -24,24 +24,28 @@ Route::get('/characters', function () {
     return view('characters', compact('message'));
 })->name('characters');
 
-Route::get('/comics', function () {
-    $comics = config('comics.comics');
-    return view('comics.index', compact('comics'));
-})->name('comics');
+// Route::get('/comics', function () {
+//     $comics = config('comics.comics');
+//     return view('comics.index', compact('comics'));
+// })->name('comics');
 
-// comic detail
-Route::get('/comics/{index}', function ($index) {
-    $comics = config('comics.comics');
 
-    //controllo che non ci siano errori nel valore
-    if ($index >= 0 && $index < count($comics)) {
-        //prendo il comic con quell'indice
-        $comic = $comics[$index];
-        return view('comics.show', compact('comic'));
-    } else {
-        abort(404);
-    }
-})->name('comics.show');
+
+// // comic detail
+// Route::get('/comics/{index}', function ($index) {
+//     $comics = config('comics.comics');
+
+//     //controllo che non ci siano errori nel valore
+//     if ($index >= 0 && $index < count($comics)) {
+//         //prendo il comic con quell'indice
+//         $comic = $comics[$index];
+//         return view('comics.show', compact('comic'));
+//     } else {
+//         abort(404);
+//     }
+// })->name('comics.show');
+
+Route::resource('comics', ComicController::class);
 
 Route::get('/movies', function () {
     $comics = config('comics.comics');
